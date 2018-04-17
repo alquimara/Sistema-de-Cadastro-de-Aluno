@@ -1,0 +1,29 @@
+<form class="form-horizontal">
+    <div class="form-group">
+      <label for="inputNome" class="col-sm-2 control-label">Nome</label>
+      <div class="col-sm-10">
+        <input  [(ngModel)]="Nome"
+        name="Nome" type="text" class="form-control" id="inputNome" placeholder="Informe seu Nome"
+        
+        
+        >
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="inputCurso" class="col-sm-2 control-label">Curso</label>
+      <div class="col-sm-10">
+        <input [(ngModel)]="Curso"
+        name="Curso"  type="text" class="form-control" id="inputCurso" placeholder="Informe seu Curso"
+        
+        >
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="col-sm-offset-2 col-sm-10">
+        <button (click) = "botaoAdicionar($event)" type="submit" class="btn btn-default">Adicionar</button>
+      </div>
+    </div>
+  </form>
+
+
+
